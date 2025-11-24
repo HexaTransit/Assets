@@ -17,6 +17,10 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
+      - name: Add server to known_hosts
+        run: |
+          ssh-keyscan 217.182.174.221 >> ~/.ssh/known_hosts
+
       - name: Copy files to server
         run: |
           rsync -avz --delete --exclude='.git*' ./ jouca@217.182.174.221:/var/www/html/hexatransit
