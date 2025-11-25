@@ -26,6 +26,13 @@ jobs:
         run: python -c "import csv,os;f=open('lines_picto.csv',encoding='utf-8');r=csv.DictReader(f,delimiter=';');missing=[row['logoPath'] for row in r if not os.path.exists(row['logoPath'].replace('https://clarifygdps.com/hexatransit/',''))];f.close();
           print('Missing logo files ({}):'.format(len(missing)));[print(' -',m) for m in missing];exit(1) if missing else None"
 
+  gtfs-check:
+    name: GTFS routes check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        
       - name: Check GTFS routes match lines_picto
         run: |
           python - <<'PY'
