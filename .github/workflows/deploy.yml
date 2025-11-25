@@ -34,6 +34,112 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
 
+      - name: Check GTFS routes match trafic.json
+        run: |
+          python - <<'PY'
+          import json, sys, io, urllib.request, zipfile, csv
+
+          # Load trafic.json
+          try:
+            with open('trafic.json', encoding='utf-8') as f:
+              data = json.load(f)
+          except Exception as e:
+            print('Failed to load trafic.json:', e)
+            sys.exit(1)
+
+          agencies = {}
+          for company in data:
+            aid = company.get('companyId')
+            if not aid:
+              continue
+            line_ids = set()
+            for group in company.get('lines', []) or []:
+              # each group is a list; items with 'lineId' contain lines
+              for item in group:
+                if not isinstance(item, dict):
+                  continue
+                lid = item.get('lineId')
+                if lid and isinstance(lid, str) and lid.strip():
+                  line_ids.add(lid.strip())
+            agencies[aid] = line_ids
+
+          if not agencies:
+            print('No agencies / line IDs found in trafic.json to check.')
+            sys.exit(0)
+
+          errors = []
+          total = len(agencies)
+          idx = 0
+          for aid, expected_line_ids in agencies.items():
+            idx += 1
+            if not expected_line_ids:
+              print(f'[{idx}/{total}] Agency "{aid}": no lineIds to check, skipping')
+              continue
+            url = f'https://clarifygdps.com/bridge/gtfs/{aid}.zip'
+            print(f'[{idx}/{total}] Checking GTFS for agency "{aid}" -> {url}')
+            try:
+              resp = urllib.request.urlopen(url, timeout=30)
+              dataz = resp.read()
+            except Exception as e:
+              msg = f'Failed to download {url}: {e}'
+              print('ERROR -', msg)
+              errors.append(msg)
+              continue
+
+            try:
+              z = zipfile.ZipFile(io.BytesIO(dataz))
+            except Exception as e:
+              msg = f'Invalid zip for {aid}: {e}'
+              print('ERROR -', msg)
+              errors.append(msg)
+              continue
+
+            namelist = z.namelist()
+            rname = None
+            for n in namelist:
+              if n.endswith('routes.txt'):
+                rname = n
+                break
+            if not rname:
+              msg = f'No routes.txt in GTFS for {aid} (found files: {namelist[:10]})'
+              print('ERROR -', msg)
+              errors.append(msg)
+              continue
+
+            try:
+              with z.open(rname) as rf:
+                txt = io.TextIOWrapper(rf, encoding='utf-8', errors='replace')
+                routes = list(csv.DictReader(txt))
+            except Exception as e:
+              msg = f'Failed to read routes.txt for {aid}: {e}'
+              print('ERROR -', msg)
+              errors.append(msg)
+              continue
+
+            route_ids = set()
+            for r in routes:
+              if isinstance(r, dict):
+                rid = r.get('route_id')
+                if rid:
+                  route_ids.add(rid)
+
+            missing = sorted([lid for lid in expected_line_ids if lid not in route_ids])
+            if missing:
+              msg = f'{len(missing)} missing line_id(s) not found in routes.txt: {missing[:20]}'
+              print('ERROR -', msg)
+              errors.append(f'Agency {aid}: {msg}')
+            else:
+              print(f'Agency {aid}: OK ({len(expected_line_ids)} line_ids matched)')
+
+          if errors:
+            print('\nGTFS verification errors:')
+            for e in errors:
+              print(' -', e)
+            sys.exit(1)
+          else:
+            print('\nAll GTFS checks passed.')
+          PY
+
       - name: Check GTFS routes match lines_picto
         run: |
           python - <<'PY'

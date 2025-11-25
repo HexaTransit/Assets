@@ -478,6 +478,18 @@
                     "scale": 0.3
                 },
                 {
+                    "lineId": "6-0035",
+                    "lineName": "Bus 35",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/35.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0037",
+                    "lineName": "Bus 37",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/37.png",
+                    "scale": 0.3
+                },
+                {
                     "lineId": "6-0038",
                     "lineName": "Bus 38",
                     "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/38.png",
@@ -487,6 +499,283 @@
                     "lineId": "6-0039",
                     "lineName": "Bus 39",
                     "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/39.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0050",
+                    "lineName": "Bus 50",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/50.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0051",
+                    "lineName": "Bus 51",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/51.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0052",
+                    "lineName": "Bus 52",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/52.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0053",
+                    "lineName": "Bus 53",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/53.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0054",
+                    "lineName": "Bus 54",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/54.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0055",
+                    "lineName": "Bus 55",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/55.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0056",
+                    "lineName": "Bus 56",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/56.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0059",
+                    "lineName": "Bus 59",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/59.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0061",
+                    "lineName": "Bus 61",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/61.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0062",
+                    "lineName": "Bus 62",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/62.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0064",
+                    "lineName": "Bus 64",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/64.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0065",
+                    "lineName": "Bus 65",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/65.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0067",
+                    "lineName": "Bus 67",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/67.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0068",
+                    "lineName": "Bus 68",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/68.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0070",
+                    "lineName": "Bus 70",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/70.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0071",
+                    "lineName": "Bus 71",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/71.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0072",
+                    "lineName": "Bus 72",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/72.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0073",
+                    "lineName": "Bus 73",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/73.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0074",
+                    "lineName": "Bus 74",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/74.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0075",
+                    "lineName": "Bus 75",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/75.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0076",
+                    "lineName": "Bus 76",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/76.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0077",
+                    "lineName": "Bus 77",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/77.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0078",
+                    "lineName": "Bus 78",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/78.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0079",
+                    "lineName": "Bus 79",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/79.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0080",
+                    "lineName": "Bus 80",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/80.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0081",
+                    "lineName": "Bus 81",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/81.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0082",
+                    "lineName": "Bus 82",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/82.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0083",
+                    "lineName": "Bus 83",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/83.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0090",
+                    "lineName": "Bus 90",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/90.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0091",
+                    "lineName": "Bus 91",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/91.png",
+                    "scale": 0.3
+                }
+            ],
+            [
+                {
+                    "transportLogo": "assets/icons/transportMode/bus_white.png",
+                    "width": 50.0,
+                    "height": 50.0
+                },
+                {
+                    "lineId": "6-0152",
+                    "lineName": "152ex",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/152ex.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0153",
+                    "lineName": "153ex",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/153ex.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0154",
+                    "lineName": "154ex",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/154ex.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0155",
+                    "lineName": "155ex",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/155ex.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0156",
+                    "lineName": "156ex",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/156ex.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0159",
+                    "lineName": "159ex",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/159ex.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0161",
+                    "lineName": "161ex",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/161ex.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0164",
+                    "lineName": "164ex",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/164ex.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0165",
+                    "lineName": "165ex",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/165ex.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0167",
+                    "lineName": "167ex",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/167ex.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0168",
+                    "lineName": "168ex",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/168ex.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0172",
+                    "lineName": "172ex",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/172ex.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0173",
+                    "lineName": "173ex",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/173ex.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0175",
+                    "lineName": "175ex",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/175ex.png",
+                    "scale": 0.3
+                },
+                {
+                    "lineId": "6-0178",
+                    "lineName": "178ex",
+                    "lineLogo": "https://clarifygdps.com/hexatransit/logo/fr-star/bus/178ex.png",
                     "scale": 0.3
                 }
             ]
