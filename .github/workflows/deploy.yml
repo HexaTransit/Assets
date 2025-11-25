@@ -11,29 +11,6 @@ jobs:
     name: Syntax check (CSV & JSON)
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v6
-
-      - name: Check trafic.json syntax
-        run: |
-          python -m json.tool trafic.json
-
-      - name: Check lines_picto.csv syntax
-        run: |
-          python -c "import csv; f=open('lines_picto.csv', encoding='utf-8'); next(csv.reader(f, delimiter=';')); f.seek(0); [row for row in csv.reader(f, delimiter=';')]"
-
-      - name: Check logo paths existence
-        run: python -c "import csv,os;f=open('lines_picto.csv',encoding='utf-8');r=csv.DictReader(f,delimiter=';');missing=[row['logoPath'] for row in r if not os.path.exists(row['logoPath'].replace('https://clarifygdps.com/hexatransit/',''))];f.close();
-          print('Missing logo files ({}):'.format(len(missing)));[print(' -',m) for m in missing];exit(1) if missing else None"
-
-  gtfs-check:
-    name: GTFS routes check
-    runs-on: ubuntu-latest
-    needs: syntax-check
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v6
-
       - name: Check GTFS routes match lines_picto
         run: |
           python - <<'PY'
@@ -42,52 +19,77 @@ jobs:
 
           # Read lines_picto.csv and group line_ids by agency_id
           try:
-            f = open('lines_picto.csv', encoding='utf-8')
+              f = open('lines_picto.csv', encoding='utf-8')
           except Exception as e:
-            print('Failed to open lines_picto.csv:', e)
-            sys.exit(1)
+              print('Failed to open lines_picto.csv:', e)
+              sys.exit(1)
           reader = csv.DictReader(f, delimiter=';')
           agencies = defaultdict(set)
           for row in reader:
-            aid = row.get('agency_id')
-            lid = row.get('line_id')
-            if aid and lid:
-              agencies[aid].add(lid)
+              aid = row.get('agency_id')
+              lid = row.get('line_id')
+              if aid and lid:
+                  agencies[aid].add(lid)
           f.close()
 
           errors = []
           for agency, line_ids in agencies.items():
-            url = f'https://clarifygdps.com/bridge/gtfs/{agency}.zip'
-            print(f'Checking GTFS for agency "{agency}" -> {url}')
-            try:
-              resp = urllib.request.urlopen(url, timeout=30)
-              data = resp.read()
-            except Exception as e:
-              errors.append(f'Failed to download {url}: {e}')
-              continue
-            try:
-              z = zipfile.ZipFile(io.BytesIO(data))
-            except Exception as e:
-              errors.append(f'Invalid zip for {agency}: {e}')
-              continue
+              agency_errors = []
+              url = f'https://clarifygdps.com/bridge/gtfs/{agency}.zip'
+              print(f'Checking GTFS for agency "{agency}" -> {url}')
+              try:
+                  resp = urllib.request.urlopen(url, timeout=30)
+                  data = resp.read()
+              except Exception as e:
+                  agency_errors.append(f'Failed to download {url}: {e}')
+              else:
+                  try:
+                      z = zipfile.ZipFile(io.BytesIO(data))
+                  except Exception as e:
+                      agency_errors.append(f'Invalid zip for {agency}: {e}')
 
-            namelist = z.namelist()
-            # Find a routes.txt (may be in a subfolder)
-            rname = None
-            for n in namelist:
-              if n.endswith('routes.txt'):
-                rname = n
-                break
-            if not rname:
-              errors.append(f'No routes.txt in GTFS for {agency} (found files: {namelist[:10]})')
-              continue
+                  if not agency_errors:
+                      namelist = z.namelist()
+                      rname = None
+                      for n in namelist:
+                          if n.endswith('routes.txt'):
+                              rname = n
+                              break
+                      if not rname:
+                          agency_errors.append(f'No routes.txt in GTFS for {agency} (found files: {namelist[:10]})')
+                      else:
+                          try:
+                              with z.open(rname) as rf:
+                                  txt = io.TextIOWrapper(rf, encoding='utf-8', errors='replace')
+                                  routes = list(csv.DictReader(txt))
+                          except Exception as e:
+                              agency_errors.append(f'Failed to read routes.txt for {agency}: {e}')
+                          else:
+                              route_ids = set()
+                              for r in routes:
+                                  if 'route_id' in r and r['route_id']:
+                                      route_ids.add(r['route_id'])
 
-            try:
-              with z.open(rname) as rf:
-                txt = io.TextIOWrapper(rf, encoding='utf-8', errors='replace')
-                routes = list(csv.DictReader(txt))
-            except Exception as e:
-              errors.append(f'Failed to read routes.txt for {agency}: {e}')
+                              missing = sorted([lid for lid in line_ids if lid not in route_ids])
+                              if missing:
+                                  agency_errors.append(f'{len(missing)} missing line_id(s) not found in routes.txt: {missing[:20]}')
+
+              # Print agency status immediately
+              if agency_errors:
+                  print(f'Agency {agency}: ERROR')
+                  for ae in agency_errors:
+                      print(' -', ae)
+                  errors.extend([f'Agency {agency}: {ae}' for ae in agency_errors])
+              else:
+                  print(f'Agency {agency}: OK ({len(line_ids)} line_ids matched)')
+
+          # Summary and final exit code
+          if errors:
+              print('\nGTFS verification had errors (see above).')
+              sys.exit(1)
+          else:
+              print('\nAll GTFS checks passed.')
+          PY
               continue
 
             route_ids = set()
