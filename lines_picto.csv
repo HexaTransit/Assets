@@ -491,3 +491,17 @@ fr-tisseo;line:58;81;https://clarifygdps.com/hexatransit/logo/fr-tisseo/bus/81.p
 fr-tisseo;line:204;TELEO;https://clarifygdps.com/hexatransit/logo/fr-tisseo/cable/TELEO.png;CABLE_CAR;0;0
 fr-tisseo;line:59;82;https://clarifygdps.com/hexatransit/logo/fr-tisseo/bus/82.png;BUS;0;0
 fr-tisseo;line:171;L7;https://clarifygdps.com/hexatransit/logo/fr-tisseo/bus/L7.png;BUS;1;0
+fr-semo;ATOUMOD006:Line:10:LOC;10;https://clarifygdps.com/hexatransit/logo/fr-semo/bus/10.png;BUS;0;0
+fr-semo;ATOUMOD006:Line:6b:LOC;6b;https://clarifygdps.com/hexatransit/logo/fr-semo/bus/6b.png;BUS;0;0
+fr-semo;ATOUMOD006:Line:6a:LOC;6a;https://clarifygdps.com/hexatransit/logo/fr-semo/bus/6a.png;BUS;0;0
+fr-semo;ATOUMOD006:Line:D1:LOC;D1;https://clarifygdps.com/hexatransit/logo/fr-semo/bus/D1.png;BUS;1;0
+fr-semo;ATOUMOD006:Line:3:LOC;3;https://clarifygdps.com/hexatransit/logo/fr-semo/bus/3.png;BUS;0;0
+fr-semo;ATOUMOD006:Line:9:LOC;9;https://clarifygdps.com/hexatransit/logo/fr-semo/bus/9.png;BUS;0;0
+fr-semo;ATOUMOD006:Line:2:LOC;2;https://clarifygdps.com/hexatransit/logo/fr-semo/bus/2.png;BUS;0;0
+fr-semo;ATOUMOD006:Line:5:LOC;5;https://clarifygdps.com/hexatransit/logo/fr-semo/bus/5.png;BUS;0;0
+fr-semo;ATOUMOD006:Line:E1:LOC;E1;https://clarifygdps.com/hexatransit/logo/fr-semo/bus/E1.png;BUS;1;0
+fr-semo;ATOUMOD006:Line:8:LOC;8;https://clarifygdps.com/hexatransit/logo/fr-semo/bus/8.png;BUS;0;0
+fr-semo;ATOUMOD006:Line:4:LOC;4;https://clarifygdps.com/hexatransit/logo/fr-semo/bus/4.png;BUS;0;0
+fr-semo;ATOUMOD006:Line:7b:LOC;7b;https://clarifygdps.com/hexatransit/logo/fr-semo/bus/7b.png;BUS;0;0
+fr-semo;ATOUMOD006:Line:7a:LOC;7a;https://clarifygdps.com/hexatransit/logo/fr-semo/bus/7a.png;BUS;0;0
+fr-semo;ATOUMOD006:Line:C1:LOC;C1;https://clarifygdps.com/hexatransit/logo/fr-semo/bus/C1.png;BUS;1;0
