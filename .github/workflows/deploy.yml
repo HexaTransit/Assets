@@ -113,7 +113,11 @@ jobs:
             try:
               with z.open(rname) as rf:
                 txt = io.TextIOWrapper(rf, encoding='utf-8', errors='replace')
-                routes = list(csv.DictReader(txt))
+                reader = csv.DictReader(txt)
+                # Remove BOM from header names if present
+                if reader.fieldnames:
+                  reader.fieldnames = [fn.lstrip('\ufeff') for fn in reader.fieldnames]
+                routes = list(reader)
             except Exception as e:
               msg = f'Failed to read routes.txt for {aid}: {e}'
               print('ERROR -', msg)
@@ -218,7 +222,11 @@ jobs:
             try:
               with z.open(rname) as rf:
                 txt = io.TextIOWrapper(rf, encoding='utf-8', errors='replace')
-                routes = list(csv.DictReader(txt))
+                reader = csv.DictReader(txt)
+                # Remove BOM from header names if present
+                if reader.fieldnames:
+                  reader.fieldnames = [fn.lstrip('\ufeff') for fn in reader.fieldnames]
+                routes = list(reader)
             except Exception as e:
               msg = f'Failed to read routes.txt for {agency}: {e}'
               print(f'Agency {agency}: ERROR - {msg}')
