@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Trafic configuration schema",
+  "description": "Schema describing the structure of a trafic.json file used by the project.",
+  "type": "object",
+  "required": ["companyId", "companyLogo", "lines"],
+  "additionalProperties": false,
+  "properties": {
+    "companyId": {
+      "type": "string",
+      "description": "Unique identifier for the company (e.g. 'fr-idf')."
+    },
+    "companyLogo": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL to the company logo (absolute URL)."
+    },
+    "gtfsRTUrl": {
+      "type": ["string", "null"],
+      "format": "uri",
+      "description": "Optional GTFS-RT URL for real-time alerts. Can be null or omitted.",
+      "default": null
+    },
+    "lines": {
+      "type": "array",
+      "description": "Array of transport groups. Each group is an array where the first item is the transport header and the following items are line objects. Example: [[{transportLogo: \"...\"}, {lineId: \"...\", lineName: \"...\"}, ...], [...]]",
+      "items": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "oneOf": [
+            {
+              "title": "Transport header",
+              "required": ["transportLogo"],
+              "properties": {
+                "transportLogo": {
+                  "type": "string",
+                  "description": "Relative path to an icon used as transport mode header (e.g. 'assets/icons/transportMode/metro_white.png')."
+                }
+              },
+              "additionalProperties": true
+            },
+            {
+              "title": "Line object",
+              "required": ["lineName", "lineLogo"],
+              "properties": {
+                "lineId": { "type": "string", "description": "GTFS or internal line identifier; may be empty string when not available." },
+                "lineName": { "type": "string", "description": "Human-readable line name (e.g. 'Métro 1')." },
+                "lineLogo": { "type": "string", "format": "uri", "description": "URL to the line logo image." },
+                "lineLogoDark": { "type": ["string","null"], "format": "uri", "description": "Optional dark-mode logo URL.", "default": null },
+                "isDisabled": { "type": "boolean", "description": "Optional flag to mark a line as disabled." }
+              },
+              "additionalProperties": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "companyId": "fr-idf",
+      "companyLogo": "https://hexatransit.fr/assets/logo/fr-idf/idfm.png",
+      "gtfsRTUrl": "http://gtfsidfm.example/gtfs-rt-alerts",
+      "lines": [
+        [
+          { "transportLogo": "assets/icons/transportMode/metro_white.png" },
+          { "lineId": "IDFM:C01371", "lineName": "Métro 1", "lineLogo": "https://.../metro_1.png" },
+          { "lineId": "", "lineName": "Métro 15", "lineLogo": "https://.../metro_15.png", "isDisabled": true }
+        ],
+        [
+          { "transportLogo": "assets/icons/transportMode/tram_white.png" },
+          { "lineId": "IDFM:C01389", "lineName": "Tramway T1", "lineLogo": "https://.../tram_1.png", "lineLogoDark": "https://.../tram_1_dark.png" }
+        ]
+      ]
+    }
+  ]
+}
