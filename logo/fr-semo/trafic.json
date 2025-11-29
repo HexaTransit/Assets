@@ -20,12 +20,18 @@
         ],
         [
             {
+                "transportLogo": "assets/icons/transportMode/bus_white.png"
+            },
+            {
                 "lineId": "ATOUMOD006:Line:E1:LOC",
                 "lineName": "Bus E1",
                 "lineLogo": "https://hexatransit.fr/assets/logo/fr-semo/bus/E1.png"
             }
         ],
         [
+            {
+                "transportLogo": "assets/icons/transportMode/bus_white.png"
+            },
             {
                 "lineId": "ATOUMOD006:Line:2:LOC",
                 "lineName": "Bus 2",
