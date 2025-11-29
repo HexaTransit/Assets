@@ -304,12 +304,21 @@
                 "transportLogo": "assets/icons/transportMode/bus_white.png"
             },
             {
-                "lineId": "IDFM:C01160",
-                "lineName": "132",
+                "lineId": "IDFM:C01071",
+                "lineName": "TVM",
                 "lineLogo": {
-                    "textDisplay": "TEST123456789",
-                    "color": "640082",
+                    "textDisplay": "TVM",
+                    "color": "216eb4",
                     "textColor": "ffffff"
+                }
+            },
+            {
+                "lineId": "IDFM:C01318",
+                "lineName": "393",
+                "lineLogo": {
+                    "textDisplay": "393",
+                    "color": "82c8e6",
+                    "textColor": "000000"
                 }
             },
             {
