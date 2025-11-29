@@ -1,0 +1,62 @@
+{
+    "companyId": "fr-transurbain",
+    "companyLogo": "https://hexatransit.fr/assets/logo/fr-transurbain/transurbain.png",
+    "gtfsRTUrl": "https://proxy.transport.data.gouv.fr/resource/transurbain-evreux-gtfs-rt-service-alert?token=fPqZ-hbjxPj2wApB8E3nEEqdHZi78ZBUkp37IpoaDOM",
+    "lines": [
+        [
+            {
+                "transportLogo": "assets/icons/transportMode/bus_white.png"
+            },
+            {
+                "lineId": "ATOUMOD004:Line:T1:LOC",
+                "lineName": "Bus T1",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-transurbain/bus/T1.png"
+            },
+            {
+                "lineId": "ATOUMOD004:Line:T2:LOC",
+                "lineName": "Bus T2",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-transurbain/bus/T2.png"
+            },
+            {
+                "lineId": "ATOUMOD004:Line:T3:LOC",
+                "lineName": "Bus T3",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-transurbain/bus/T3.png"
+            },
+            {
+                "lineId": "ATOUMOD004:Line:T4:LOC",
+                "lineName": "Bus T4",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-transurbain/bus/T4.png"
+            },
+            {
+                "lineId": "ATOUMOD004:Line:T5:LOC",
+                "lineName": "Bus T5",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-transurbain/bus/T5.png"
+            },
+            {
+                "lineId": "ATOUMOD004:Line:T6:LOC",
+                "lineName": "Bus T6",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-transurbain/bus/T6.png"
+            },
+            {
+                "lineId": "ATOUMOD004:Line:T7:LOC",
+                "lineName": "Bus T7",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-transurbain/bus/T7.png"
+            },
+            {
+                "lineId": "ATOUMOD004:Line:T8:LOC",
+                "lineName": "Bus T8",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-transurbain/bus/T8.png"
+            },
+            {
+                "lineId": "ATOUMOD004:Line:T9:LOC",
+                "lineName": "Bus T9",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-transurbain/bus/T9.png"
+            },
+            {
+                "lineId": "ATOUMOD004:Line:T10:LOC",
+                "lineName": "Bus T10",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-transurbain/bus/T10.png"
+            }
+        ]
+    ]
+}
