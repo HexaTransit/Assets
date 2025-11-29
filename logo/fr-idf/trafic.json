@@ -166,7 +166,7 @@
                 "isDisabled": true
             },
             {
-                "lineId": "",
+                "lineId": "IDFM:C02833",
                 "lineName": "Métro 18",
                 "lineLogo": "https://hexatransit.fr/assets/logo/fr-idf/metro/metro_18_couleur_RVB.png",
                 "scale": 1.0,
@@ -183,90 +183,105 @@
                 "lineId": "IDFM:C01389",
                 "lineName": "Tramway T1",
                 "lineLogo": "https://hexatransit.fr/assets/logo/fr-idf/tram/tram_1_couleur_RVB.png",
+                "lineLogoDark": "https://hexatransit.fr/assets/logo/fr-idf/tram/tram_1_couleur_RVB_dark.png",
                 "scale": 1.0
             },
             {
                 "lineId": "IDFM:C01390",
                 "lineName": "Tramway T2",
                 "lineLogo": "https://hexatransit.fr/assets/logo/fr-idf/tram/tram_2_couleur_RVB.png",
+                "lineLogoDark": "https://hexatransit.fr/assets/logo/fr-idf/tram/tram_2_couleur_RVB_dark.png",
                 "scale": 1.0
             },
             {
                 "lineId": "IDFM:C01391",
                 "lineName": "Tramway T3a",
                 "lineLogo": "https://hexatransit.fr/assets/logo/fr-idf/tram/tram_3a_couleur_RVB.png",
+                "lineLogoDark": "https://hexatransit.fr/assets/logo/fr-idf/tram/tram_3a_couleur_RVB_dark.png",
                 "scale": 1.0
             },
             {
                 "lineId": "IDFM:C01679",
                 "lineName": "Tramway T3b",
                 "lineLogo": "https://hexatransit.fr/assets/logo/fr-idf/tram/tram_3b_couleur_RVB.png",
+                "lineLogoDark": "https://hexatransit.fr/assets/logo/fr-idf/tram/tram_3b_couleur_RVB_dark.png",
                 "scale": 1.0
             },
             {
                 "lineId": "IDFM:C01843",
                 "lineName": "Tramway T4",
                 "lineLogo": "https://hexatransit.fr/assets/logo/fr-idf/tram/tram_4_couleur_RVB.png",
+                "lineLogoDark": "https://hexatransit.fr/assets/logo/fr-idf/tram/tram_4_couleur_RVB_dark.png",
                 "scale": 1.0
             },
             {
                 "lineId": "IDFM:C01684",
                 "lineName": "Tramway T5",
                 "lineLogo": "https://hexatransit.fr/assets/logo/fr-idf/tram/tram_5_couleur_RVB.png",
+                "lineLogoDark": "https://hexatransit.fr/assets/logo/fr-idf/tram/tram_5_couleur_RVB_dark.png",
                 "scale": 1.0
             },
             {
                 "lineId": "IDFM:C01794",
                 "lineName": "Tramway T6",
                 "lineLogo": "https://hexatransit.fr/assets/logo/fr-idf/tram/tram_6_couleur_RVB.png",
+                "lineLogoDark": "https://hexatransit.fr/assets/logo/fr-idf/tram/tram_6_couleur_RVB_dark.png",
                 "scale": 1.0
             },
             {
                 "lineId": "IDFM:C01774",
                 "lineName": "Tramway T7",
                 "lineLogo": "https://hexatransit.fr/assets/logo/fr-idf/tram/tram_7_couleur_RVB.png",
+                "lineLogoDark": "https://hexatransit.fr/assets/logo/fr-idf/tram/tram_7_couleur_RVB_dark.png",
                 "scale": 1.0
             },
             {
                 "lineId": "IDFM:C01795",
                 "lineName": "Tramway T8",
                 "lineLogo": "https://hexatransit.fr/assets/logo/fr-idf/tram/tram_8_couleur_RVB.png",
+                "lineLogoDark": "https://hexatransit.fr/assets/logo/fr-idf/tram/tram_8_couleur_RVB_dark.png",
                 "scale": 1.0
             },
             {
                 "lineId": "IDFM:C02317",
                 "lineName": "Tramway T9",
                 "lineLogo": "https://hexatransit.fr/assets/logo/fr-idf/tram/tram_9_couleur_RVB.png",
+                "lineLogoDark": "https://hexatransit.fr/assets/logo/fr-idf/tram/tram_9_couleur_RVB_dark.png",
                 "scale": 1.0
             },
             {
                 "lineId": "IDFM:C02528",
                 "lineName": "Tramway T10",
                 "lineLogo": "https://hexatransit.fr/assets/logo/fr-idf/tram/tram_10_couleur_RVB.png",
+                "lineLogoDark": "https://hexatransit.fr/assets/logo/fr-idf/tram/tram_10_couleur_RVB_dark.png",
                 "scale": 1.0
             },
             {
                 "lineId": "IDFM:C01999",
                 "lineName": "Tramway T11",
                 "lineLogo": "https://hexatransit.fr/assets/logo/fr-idf/tram/tram_11_couleur_RVB.png",
+                "lineLogoDark": "https://hexatransit.fr/assets/logo/fr-idf/tram/tram_11_couleur_RVB_dark.png",
                 "scale": 1.0
             },
             {
                 "lineId": "IDFM:C02529",
                 "lineName": "Tramway T12",
                 "lineLogo": "https://hexatransit.fr/assets/logo/fr-idf/tram/tram_12_couleur_RVB.png",
+                "lineLogoDark": "https://hexatransit.fr/assets/logo/fr-idf/tram/tram_12_couleur_RVB_dark.png",
                 "scale": 1.0
             },
             {
                 "lineId": "IDFM:C02344",
                 "lineName": "Tramway T13",
                 "lineLogo": "https://hexatransit.fr/assets/logo/fr-idf/tram/tram_13_couleur_RVB.png",
+                "lineLogoDark": "https://hexatransit.fr/assets/logo/fr-idf/tram/tram_13_couleur_RVB_dark.png",
                 "scale": 1.0
             },
             {
                 "lineId": "IDFM:C02732",
                 "lineName": "Tramway T14",
                 "lineLogo": "https://hexatransit.fr/assets/logo/fr-idf/tram/tram_14_couleur_RVB.png",
+                "lineLogoDark": "https://hexatransit.fr/assets/logo/fr-idf/tram/tram_14_couleur_RVB_dark.png",
                 "scale": 1.0
             }
         ],
