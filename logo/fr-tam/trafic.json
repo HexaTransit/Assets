@@ -1,61 +1,226 @@
 {
-    "companyId": "fr-transurbain",
-    "companyLogo": "https://hexatransit.fr/assets/logo/fr-transurbain/transurbain.png",
-    "gtfsRTUrl": "https://proxy.transport.data.gouv.fr/resource/transurbain-evreux-gtfs-rt-service-alert?token=fPqZ-hbjxPj2wApB8E3nEEqdHZi78ZBUkp37IpoaDOM",
+    "companyId": "fr-tam",
+    "companyLogo": "https://hexatransit.fr/assets/logo/fr-tam/TAM.png",
+    "gtfsRTUrl": "https://data.montpellier3m.fr/TAM_MMM_GTFSRT/Alert.pb",
     "lines": [
+        [
+            {
+                "transportLogo": "assets/icons/transportMode/tram_white.png"
+            },
+            {
+                "lineId": "1",
+                "lineName": "Tram 1",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/tram/1.png"
+            },
+            {
+                "lineId": "2",
+                "lineName": "Tram 2",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/tram/2.png"
+            },
+            {
+                "lineId": "3",
+                "lineName": "Tram 3",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/tram/3.png"
+            },
+            {
+                "lineId": "4",
+                "lineName": "Tram 4",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/tram/4.png"
+            }
+        ],
         [
             {
                 "transportLogo": "assets/icons/transportMode/bus_white.png"
             },
             {
-                "lineId": "ATOUMOD004:Line:T1:LOC",
-                "lineName": "Bus T1",
-                "lineLogo": "https://hexatransit.fr/assets/logo/fr-transurbain/bus/T1.png"
+                "lineId": "A",
+                "lineName": "Bustram A",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/bus/A.png"
+            }
+        ],
+        [
+            {
+                "transportLogo": "assets/icons/transportMode/bus_white.png"
             },
             {
-                "lineId": "ATOUMOD004:Line:T2:LOC",
-                "lineName": "Bus T2",
-                "lineLogo": "https://hexatransit.fr/assets/logo/fr-transurbain/bus/T2.png"
+                "lineId": "6",
+                "lineName": "Bus 6",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/bus/6.png"
             },
             {
-                "lineId": "ATOUMOD004:Line:T3:LOC",
-                "lineName": "Bus T3",
-                "lineLogo": "https://hexatransit.fr/assets/logo/fr-transurbain/bus/T3.png"
+                "lineId": "7",
+                "lineName": "Bus 7",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/bus/7.png"
             },
             {
-                "lineId": "ATOUMOD004:Line:T4:LOC",
-                "lineName": "Bus T4",
-                "lineLogo": "https://hexatransit.fr/assets/logo/fr-transurbain/bus/T4.png"
+                "lineId": "8",
+                "lineName": "Bus 8",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/bus/8.png"
             },
             {
-                "lineId": "ATOUMOD004:Line:T5:LOC",
-                "lineName": "Bus T5",
-                "lineLogo": "https://hexatransit.fr/assets/logo/fr-transurbain/bus/T5.png"
+                "lineId": "10",
+                "lineName": "Bus 10",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/bus/10.png"
             },
             {
-                "lineId": "ATOUMOD004:Line:T6:LOC",
-                "lineName": "Bus T6",
-                "lineLogo": "https://hexatransit.fr/assets/logo/fr-transurbain/bus/T6.png"
+                "lineId": "11",
+                "lineName": "Bus 11",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/bus/11.png"
             },
             {
-                "lineId": "ATOUMOD004:Line:T7:LOC",
-                "lineName": "Bus T7",
-                "lineLogo": "https://hexatransit.fr/assets/logo/fr-transurbain/bus/T7.png"
+                "lineId": "13",
+                "lineName": "La Navette",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/bus/Navette.png"
             },
             {
-                "lineId": "ATOUMOD004:Line:T8:LOC",
-                "lineName": "Bus T8",
-                "lineLogo": "https://hexatransit.fr/assets/logo/fr-transurbain/bus/T8.png"
+                "lineId": "14",
+                "lineName": "Bus 14",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/bus/14.png"
             },
             {
-                "lineId": "ATOUMOD004:Line:T9:LOC",
-                "lineName": "Bus T9",
-                "lineLogo": "https://hexatransit.fr/assets/logo/fr-transurbain/bus/T9.png"
+                "lineId": "15",
+                "lineName": "Bus 15",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/bus/15.png"
             },
             {
-                "lineId": "ATOUMOD004:Line:T10:LOC",
-                "lineName": "Bus T10",
-                "lineLogo": "https://hexatransit.fr/assets/logo/fr-transurbain/bus/T10.png"
+                "lineId": "16",
+                "lineName": "Bus 16",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/bus/16.png"
+            },
+            {
+                "lineId": "17",
+                "lineName": "Bus 17",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/bus/17.png"
+            },
+            {
+                "lineId": "18",
+                "lineName": "Bus 18",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/bus/18.png"
+            },
+            {
+                "lineId": "19",
+                "lineName": "Bus 19",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/bus/19.png"
+            },
+            {
+                "lineId": "20",
+                "lineName": "Bus 20",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/bus/20.png"
+            },
+            {
+                "lineId": "21",
+                "lineName": "Bus 21",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/bus/21.png"
+            },
+            {
+                "lineId": "22",
+                "lineName": "Bus 22",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/bus/22.png"
+            },
+            {
+                "lineId": "23",
+                "lineName": "Bus 23",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/bus/23.png"
+            },
+            {
+                "lineId": "24",
+                "lineName": "Bus 24",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/bus/24.png"
+            },
+            {
+                "lineId": "25",
+                "lineName": "Bus 25",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/bus/25.png"
+            },
+            {
+                "lineId": "26",
+                "lineName": "Bus 26",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/bus/26.png"
+            },
+            {
+                "lineId": "27",
+                "lineName": "Bus 27",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/bus/27.png"
+            },
+            {
+                "lineId": "28",
+                "lineName": "Bus 28",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/bus/28.png"
+            },
+            {
+                "lineId": "30",
+                "lineName": "Bus 30",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/bus/30.png"
+            },
+            {
+                "lineId": "31",
+                "lineName": "Bus 31",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/bus/31.png"
+            },
+            {
+                "lineId": "32",
+                "lineName": "Bus 32",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/bus/32.png"
+            },
+            {
+                "lineId": "33",
+                "lineName": "Bus 33",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/bus/33.png"
+            },
+            {
+                "lineId": "34",
+                "lineName": "Bus 34",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/bus/34.png"
+            },
+            {
+                "lineId": "35",
+                "lineName": "Bus 35",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/bus/35.png"
+            },
+            {
+                "lineId": "36",
+                "lineName": "Bus 36",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/bus/36.png"
+            },
+            {
+                "lineId": "38",
+                "lineName": "Bus 38",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/bus/38.png"
+            },
+            {
+                "lineId": "40",
+                "lineName": "Bus 40",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/bus/40.png"
+            },
+            {
+                "lineId": "41",
+                "lineName": "Bus 41",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/bus/41.png"
+            },
+            {
+                "lineId": "42",
+                "lineName": "Bus 42",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/bus/42.png"
+            },
+            {
+                "lineId": "43",
+                "lineName": "Bus 43",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/bus/43.png"
+            },
+            {
+                "lineId": "44",
+                "lineName": "Bus 44",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/bus/44.png"
+            },
+            {
+                "lineId": "46",
+                "lineName": "Bus 46",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/bus/46.png"
+            },
+            {
+                "lineId": "96",
+                "lineName": "Navette Ovalie",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-tam/bus/Ovalie.png"
             }
         ]
     ]
