@@ -1,0 +1,86 @@
+{
+    "companyId": "fr-semo",
+    "companyLogo": "https://hexatransit.fr/assets/logo/fr-semo/semo.png",
+    "gtfsRTUrl": "https://proxy.transport.data.gouv.fr/resource/seine-eure-semo-gtfs-rt-alerts?token=fPqZ-hbjxPj2wApB8E3nEEqdHZi78ZBUkp37IpoaDOM",
+    "lines": [
+        [
+            {
+                "transportLogo": "assets/icons/transportMode/bus_white.png"
+            },
+            {
+                "lineId": "ATOUMOD006:Line:C1:LOC",
+                "lineName": "Bus C1",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-semo/bus/C1.png"
+            },
+            {
+                "lineId": "ATOUMOD006:Line:D1:LOC",
+                "lineName": "Bus D1",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-semo/bus/D1.png"
+            }
+        ],
+        [
+            {
+                "lineId": "ATOUMOD006:Line:E1:LOC",
+                "lineName": "Bus E1",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-semo/bus/E1.png"
+            }
+        ],
+        [
+            {
+                "lineId": "ATOUMOD006:Line:2:LOC",
+                "lineName": "Bus 2",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-semo/bus/2.png"
+            },
+            {
+                "lineId": "ATOUMOD006:Line:3:LOC",
+                "lineName": "Bus 3",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-semo/bus/3.png"
+            },
+            {
+                "lineId": "ATOUMOD006:Line:4:LOC",
+                "lineName": "Bus 4",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-semo/bus/4.png"
+            },
+            {
+                "lineId": "ATOUMOD006:Line:5:LOC",
+                "lineName": "Bus 5",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-semo/bus/5.png"
+            },
+            {
+                "lineId": "ATOUMOD006:Line:6a:LOC",
+                "lineName": "Bus 6a",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-semo/bus/6a.png"
+            },
+            {
+                "lineId": "ATOUMOD006:Line:6b:LOC",
+                "lineName": "Bus 6b",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-semo/bus/6b.png"
+            },
+            {
+                "lineId": "ATOUMOD006:Line:7a:LOC",
+                "lineName": "Bus 7a",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-semo/bus/7a.png"
+            },
+            {
+                "lineId": "ATOUMOD006:Line:7b:LOC",
+                "lineName": "Bus 7b",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-semo/bus/7b.png"
+            },
+            {
+                "lineId": "ATOUMOD006:Line:8:LOC",
+                "lineName": "Bus 8",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-semo/bus/8.png"
+            },
+            {
+                "lineId": "ATOUMOD006:Line:9:LOC",
+                "lineName": "Bus 9",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-semo/bus/9.png"
+            },
+            {
+                "lineId": "ATOUMOD006:Line:10:LOC",
+                "lineName": "Bus 10",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-semo/bus/10.png"
+            }
+        ]
+    ]
+}
