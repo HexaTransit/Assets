@@ -20,10 +20,21 @@ jobs:
       - name: Check logo paths existence
         run: python .github/scripts/check_logo_path_existence.py
 
+  architecture-check:
+    name: Architecture check
+    runs-on: ubuntu-latest
+    needs: syntax-check
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Run architecture checks for trafic.json files
+        run: python .github/scripts/check_structure_trafic.py
+
   gtfs-check:
     name: GTFS routes check
     runs-on: ubuntu-latest
-    needs: syntax-check
+    needs: architecture-check
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
@@ -36,7 +47,7 @@ jobs:
 
   deploy:
     if: github.ref == 'refs/heads/main'
-    needs: [syntax-check, gtfs-check]
+    needs: [syntax-check, architecture-check, gtfs-check]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
