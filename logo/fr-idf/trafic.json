@@ -468,6 +468,11 @@
                 "lineLogo": "https://hexatransit.fr/assets/logo/fr-idf/bus/n71.png"
             },
             {
+                "lineId": "IDFM:C02668",
+                "lineName": "N72",
+                "lineLogo": "https://hexatransit.fr/assets/logo/fr-idf/bus/n72.png"
+            },
+            {
                 "lineId": "IDFM:C01421",
                 "lineName": "N122",
                 "lineLogo": "https://hexatransit.fr/assets/logo/fr-idf/bus/n122.png"
