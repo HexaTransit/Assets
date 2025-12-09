@@ -44,7 +44,7 @@ def check_gtfs_for_agencies(agencies, timeout=30):
     count = 0
     for agency, line_ids in agencies.items():
         count += 1
-        url = f'https://clarifygdps.com/bridge/gtfs/{agency}.zip'
+        url = f'https://hexatransit.fr/datasets/gtfs/{agency}.zip'
         print(f'[{count}/{total_agencies}] Checking GTFS for agency "{agency}" -> {url}')
         try:
             resp = urllib.request.urlopen(url, timeout=timeout)

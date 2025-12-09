@@ -66,7 +66,7 @@ def check_gtfs_for_agencies(agencies, timeout=30):
         if not expected_line_ids:
             print(f'[{idx}/{total}] Agency "{aid}": no lineIds to check, skipping')
             continue
-        url = f'https://clarifygdps.com/bridge/gtfs/{aid}.zip'
+        url = f'https://hexatransit.fr/datasets/gtfs/{aid}.zip'
         print(f'[{idx}/{total}] Checking GTFS for agency "{aid}" -> {url}')
         try:
             resp = urllib.request.urlopen(url, timeout=timeout)
