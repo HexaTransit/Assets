@@ -7,8 +7,18 @@
   "additionalProperties": false,
   "properties": {
     "companyId": {
-      "type": "string",
-      "description": "Unique identifier for the company (e.g. 'fr-idf')."
+      "oneOf": [
+        {
+          "type": "string",
+          "description": "Unique identifier for the company (e.g. 'fr-idf')."
+        },
+        {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1,
+          "description": "Array of unique identifiers for the company."
+        }
+      ]
     },
     "companyLogo": {
       "type": "string",
