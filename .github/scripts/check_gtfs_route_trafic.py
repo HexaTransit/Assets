@@ -31,17 +31,10 @@ def gather_trafic_json(root_dir):
 
                 def process_company(company):
                     root_aid = company.get('companyId')
-                    if not root_aid:
-                        return
                     
-                    # Check if root companyId is a list (multiple companies case)
-                    root_is_list = isinstance(root_aid, list)
-                    
-                    # Normalize root companyId for single company case
-                    if isinstance(root_aid, str):
-                        root_company_id = root_aid.strip() if root_aid.strip() else None
-                    else:
-                        root_company_id = None
+                    # Determine if we have a root companyId (single company case)
+                    has_root_company = root_aid is not None and isinstance(root_aid, str) and root_aid.strip()
+                    root_company_id = root_aid.strip() if has_root_company else None
                     
                     # Process each line
                     for group in company.get('lines', []) or []:
@@ -57,28 +50,25 @@ def gather_trafic_json(root_dir):
                             if not lid_s:
                                 continue
                             
-                            # Determine which companyId to use
+                            # Get line-specific companyId
                             line_aid = item.get('companyId')
                             
-                            if root_is_list:
-                                # Root is a list: line MUST have its own companyId (string only)
-                                if line_aid is None:
-                                    print(f'Warning: Line {lid_s} has no companyId but root companyId is a list. Skipping.')
-                                    continue
-                                if not isinstance(line_aid, str):
-                                    print(f'Warning: Line {lid_s} has invalid companyId (must be string when root is list). Skipping.')
-                                    continue
-                                cid = line_aid.strip()
-                                if cid:
-                                    agencies[cid].add(lid_s)
-                            else:
-                                # Root is a string: use line's companyId if present, otherwise use root
+                            if has_root_company:
+                                # Single company case: use line's companyId if present, otherwise use root
                                 if line_aid is not None and isinstance(line_aid, str):
                                     cid = line_aid.strip()
                                     if cid:
                                         agencies[cid].add(lid_s)
-                                elif root_company_id:
+                                else:
                                     agencies[root_company_id].add(lid_s)
+                            else:
+                                # Multiple companies case: line MUST have its own companyId
+                                if line_aid is None or not isinstance(line_aid, str):
+                                    print(f'Warning: Line {lid_s} has no companyId and no root companyId found. Skipping.')
+                                    continue
+                                cid = line_aid.strip()
+                                if cid:
+                                    agencies[cid].add(lid_s)
 
                 if isinstance(data, list):
                     for company in data:

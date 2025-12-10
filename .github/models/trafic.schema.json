@@ -3,12 +3,12 @@
   "title": "Trafic configuration schema",
   "description": "Schema describing the structure of a trafic.json file used by the project.",
   "type": "object",
-  "required": ["companyId", "companyLogo", "lines"],
+  "required": ["companyLogo", "lines"],
   "additionalProperties": false,
   "properties": {
     "companyId": {
       "type": "string",
-      "description": "Unique identifier for the company (e.g. 'fr-idf')."
+      "description": "Unique identifier for the company (e.g. 'fr-idf'). Required for single company configurations. Omit when multiple companies share the same configuration (each line must then have its own companyId)."
     },
     "companyLogo": {
       "type": "string",
@@ -67,7 +67,7 @@
                 "isDisabled": { "type": "boolean", "description": "Optional flag to mark a line as disabled." },
                 "companyId": {
                   "type": "string",
-                  "description": "Optional: specify which company this line belongs to. Required when root companyId is an array. Must be a string (not an array)."
+                  "description": "Optional: specify which company this line belongs to. If root companyId is omitted (multiple companies case), this field becomes required for each line. Must be a string."
                 }
               },
               "additionalProperties": false
