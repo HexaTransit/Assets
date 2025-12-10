@@ -1,5 +1,5 @@
 {
-  "companyId": "fr-astuce",
+  "companyId": ["fr-astuce", "fr-astuce-elbeuf", "fr-astuce-interurbain"],
   "companyLogo": "https://hexatransit.fr/assets/logo/fr-astuce/astuce.png",
   "gtfsRTUrl": "https://gtfs.flocaseih.me/service_alerts.pb",
   "lines": [
