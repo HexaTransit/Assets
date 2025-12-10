@@ -33,6 +33,9 @@ def gather_trafic_json(root_dir):
                     aid = company.get('companyId')
                     if not aid:
                         return
+                    # Handle companyId as either a string or a list of strings
+                    company_ids = [aid] if isinstance(aid, str) else aid if isinstance(aid, list) else []
+                    
                     for group in company.get('lines', []) or []:
                         for item in group:
                             if not isinstance(item, dict):
@@ -42,7 +45,10 @@ def gather_trafic_json(root_dir):
                                 continue
                             lid_s = str(lid).strip()
                             if lid_s:
-                                agencies[aid].add(lid_s)
+                                # Add the lineId to all companyIds in the list
+                                for cid in company_ids:
+                                    if isinstance(cid, str) and cid.strip():
+                                        agencies[cid.strip()].add(lid_s)
 
                 if isinstance(data, list):
                     for company in data:
