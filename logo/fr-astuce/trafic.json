@@ -1,6 +1,6 @@
 {
   "companyLogo": "https://hexatransit.fr/assets/logo/fr-astuce/astuce.png",
-  "gtfsRTUrl": "https://gtfs.flocaseih.me/service_alerts.pb",
+  "gtfsRTUrl": "https://gtfs.flocaseih.me/service_alerts_alt.pb",
   "lines": [
     [
       {
