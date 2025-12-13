@@ -295,8 +295,7 @@
                 "lineId": "IDFM:C02666",
                 "lineName": "Câble 1",
                 "lineLogo": "https://hexatransit.fr/assets/logo/fr-idf/cable/cable_1_couleur_RVB.png",
-                "lineLogoDark": "https://hexatransit.fr/assets/logo/fr-idf/cable/cable_1_couleur_RVB_dark.png",
-                "isDisabled": true
+                "lineLogoDark": "https://hexatransit.fr/assets/logo/fr-idf/cable/cable_1_couleur_RVB_dark.png"
             }
         ],
         [
