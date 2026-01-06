@@ -1,14 +1,14 @@
 {
+  "companyId": "fr-astuce",
   "companyLogo": "https://hexatransit.fr/assets/logo/fr-astuce/astuce.png",
-  "gtfsRTUrl": "https://gtfs.flocaseih.me/service_alerts_alt.pb",
+  "gtfsRTUrl": "https://gtfs.flocaseih.me/service_alerts.pb",
   "lines": [
     [
       {
         "transportLogo": "assets/icons/transportMode/metro_white.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "90",
+        "lineId": "TCAR:90",
         "lineName": "Métro",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/metro/M.png"
       }
@@ -18,8 +18,7 @@
         "transportLogo": "assets/icons/transportMode/ferry_white.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "99",
+        "lineId": "TCAR:99",
         "lineName": "Navette fluviale Calypso",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/ferry/Calypso.png"
       }
@@ -29,32 +28,27 @@
         "transportLogo": "assets/icons/transportMode/bus_white.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "91",
+        "lineId": "TCAR:91",
         "lineName": "TEOR T1",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/T1.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "92",
+        "lineId": "TCAR:92",
         "lineName": "TEOR T2",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/T2.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "93",
+        "lineId": "TCAR:93",
         "lineName": "TEOR T3",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/T3.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "94",
+        "lineId": "TCAR:94",
         "lineName": "TEOR T4",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/T4.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "95",
+        "lineId": "TCAR:95",
         "lineName": "TEOR T5",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/T5.png"
       }
@@ -64,56 +58,47 @@
         "transportLogo": "assets/icons/transportMode/bus_white.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "01",
+        "lineId": "TCAR:01",
         "lineName": "FAST 1",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/F1.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "02",
+        "lineId": "TCAR:02",
         "lineName": "FAST 2",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/F2.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "03",
+        "lineId": "TCAR:03",
         "lineName": "FAST 3",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/F3.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "04",
+        "lineId": "TCAR:04",
         "lineName": "FAST 4",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/F4.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "05",
+        "lineId": "TCAR:05",
         "lineName": "FAST 5",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/F5.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "06",
+        "lineId": "TCAR:06",
         "lineName": "FAST 6",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/F6.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "07",
+        "lineId": "TCAR:07",
         "lineName": "FAST 7",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/F7.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "08",
+        "lineId": "TCAR:08",
         "lineName": "FAST 8",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/F8.png"
       },
       {
-        "companyId": "fr-astuce-elbeuf",
-        "lineId": "118",
+        "lineId": "TAE:118",
         "lineName": "FAST 9",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/F9.png"
       }
@@ -123,8 +108,7 @@
         "transportLogo": "assets/icons/transportMode/bus_white.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "98",
+        "lineId": "TCAR:98",
         "lineName": "Noctambus",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/Noctambus.png"
       }
@@ -134,128 +118,107 @@
         "transportLogo": "assets/icons/transportMode/bus_white.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "10",
+        "lineId": "TCAR:10",
         "lineName": "Bus 10",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/10.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "11",
+        "lineId": "TCAR:11",
         "lineName": "Bus 11",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/11.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "13",
+        "lineId": "TCAR:13",
         "lineName": "Bus 13",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/13.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "14",
+        "lineId": "TCAR:14",
         "lineName": "Bus 14",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/14.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "15",
+        "lineId": "TCAR:15",
         "lineName": "Bus 15",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/15.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "20",
+        "lineId": "TCAR:20",
         "lineName": "Bus 20",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/20.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "22",
+        "lineId": "TCAR:22",
         "lineName": "Bus 22",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/22.png"
       },
       {
-        "companyId": "fr-astuce-interurbain",
-        "lineId": "26",
+        "lineId": "TNI:26",
         "lineName": "Bus 26",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/26.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "27",
+        "lineId": "TCAR:27",
         "lineName": "Bus 27",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/27.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "28",
+        "lineId": "TCAR:28",
         "lineName": "Bus 28",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/28.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "33",
+        "lineId": "TCAR:33",
         "lineName": "Bus 33",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/33.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "35",
+        "lineId": "TCAR:35",
         "lineName": "Bus 35",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/35.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "36",
+        "lineId": "TCAR:36",
         "lineName": "Bus 36",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/36.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "37",
+        "lineId": "TCAR:37",
         "lineName": "Bus 37",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/37.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "38",
+        "lineId": "TCAR:38",
         "lineName": "Bus 38",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/38.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "41",
+        "lineId": "TCAR:41",
         "lineName": "Bus 41",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/41.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "42",
+        "lineId": "TCAR:42",
         "lineName": "Bus 42",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/42.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "43",
+        "lineId": "TCAR:43",
         "lineName": "Bus 43",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/43.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "44",
+        "lineId": "TCAR:44",
         "lineName": "Bus 44",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/44.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "529",
+        "lineId": "TCAR:529",
         "lineName": "Bus 529",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/529.png"
       },
       {
-        "companyId": "fr-astuce-interurbain",
-        "lineId": "530",
+        "lineId": "TNI:530",
         "lineName": "Bus 530",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/530.png"
       }
@@ -265,50 +228,42 @@
         "transportLogo": "assets/icons/transportMode/bus_white.png"
       },
       {
-        "companyId": "fr-astuce-elbeuf",
-        "lineId": "111",
+        "lineId": "TAE:111",
         "lineName": "Bus A",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/A.png"
       },
       {
-        "companyId": "fr-astuce-elbeuf",
-        "lineId": "112",
+        "lineId": "TAE:112",
         "lineName": "Bus B",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/B.png"
       },
       {
-        "companyId": "fr-astuce-elbeuf",
-        "lineId": "113",
+        "lineId": "TAE:113",
         "lineName": "Bus C",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/C.png"
       },
       {
-        "companyId": "fr-astuce-elbeuf",
-        "lineId": "116",
+        "lineId": "TAE:116",
         "lineName": "Bus D1",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/D1.png"
       },
       {
-        "companyId": "fr-astuce-elbeuf",
-        "lineId": "117",
+        "lineId": "TAE:117",
         "lineName": "Bus D2",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/D2.png"
       },
       {
-        "companyId": "fr-astuce-elbeuf",
-        "lineId": "115",
+        "lineId": "TAE:115",
         "lineName": "Bus F",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/F.png"
       },
       {
-        "companyId": "fr-astuce-elbeuf",
-        "lineId": "119",
+        "lineId": "TAE:119",
         "lineName": "Bus G",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/G.png"
       },
       {
-        "companyId": "fr-astuce-elbeuf",
-        "lineId": "120",
+        "lineId": "TAE:120",
         "lineName": "Bus I",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/I.png"
       }
@@ -318,38 +273,32 @@
         "transportLogo": "assets/icons/transportMode/bus_white.png"
       },
       {
-        "companyId": "fr-astuce-elbeuf",
-        "lineId": "101",
+        "lineId": "TAE:101",
         "lineName": "Scolaire 101",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/101.png"
       },
       {
-        "companyId": "fr-astuce-elbeuf",
-        "lineId": "102",
+        "lineId": "TAE:102",
         "lineName": "Scolaire 102",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/102.png"
       },
       {
-        "companyId": "fr-astuce-elbeuf",
-        "lineId": "103",
+        "lineId": "TAE:103",
         "lineName": "Scolaire 103",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/103.png"
       },
       {
-        "companyId": "fr-astuce-elbeuf",
-        "lineId": "104",
+        "lineId": "TAE:104",
         "lineName": "Scolaire 104",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/104.png"
       },
       {
-        "companyId": "fr-astuce-elbeuf",
-        "lineId": "106",
+        "lineId": "TAE:106",
         "lineName": "Scolaire 106",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/106.png"
       },
       {
-        "companyId": "fr-astuce-elbeuf",
-        "lineId": "311",
+        "lineId": "TAE:311",
         "lineName": "Scolaire 311",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/311.png"
       }
@@ -359,128 +308,107 @@
         "transportLogo": "assets/icons/transportMode/bus_white.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "201",
+        "lineId": "TCAR:201",
         "lineName": "Scolaire 201",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/201.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "202",
+        "lineId": "TCAR:202",
         "lineName": "Scolaire 202",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/202.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "203",
+        "lineId": "TCAR:203",
         "lineName": "Scolaire 203",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/203.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "204",
+        "lineId": "TCAR:204",
         "lineName": "Scolaire 204",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/204.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "205",
+        "lineId": "TCAR:205",
         "lineName": "Scolaire 205",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/205.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "206",
+        "lineId": "TCAR:206",
         "lineName": "Scolaire 206",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/206.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "207",
+        "lineId": "TCAR:207",
         "lineName": "Scolaire 207",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/207.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "208",
+        "lineId": "TCAR:208",
         "lineName": "Scolaire 208",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/208.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "210",
+        "lineId": "TCAR:210",
         "lineName": "Scolaire 210",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/210.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "211",
+        "lineId": "TCAR:211",
         "lineName": "Scolaire 211",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/211.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "212",
+        "lineId": "TCAR:212",
         "lineName": "Scolaire 212",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/212.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "213",
+        "lineId": "TCAR:213",
         "lineName": "Scolaire 213",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/213.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "214",
+        "lineId": "TCAR:214",
         "lineName": "Scolaire 214",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/214.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "220",
+        "lineId": "TCAR:220",
         "lineName": "Scolaire 220",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/220.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "221",
+        "lineId": "TCAR:221",
         "lineName": "Scolaire 221",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/221.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "222",
+        "lineId": "TCAR:222",
         "lineName": "Scolaire 222",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/222.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "224",
+        "lineId": "TCAR:224",
         "lineName": "Scolaire 224",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/224.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "225",
+        "lineId": "TCAR:225",
         "lineName": "Scolaire 225",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/225.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "227",
+        "lineId": "TCAR:227",
         "lineName": "Scolaire 227",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/227.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "228",
+        "lineId": "TCAR:228",
         "lineName": "Scolaire 228",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/228.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "229",
+        "lineId": "TCAR:229",
         "lineName": "Scolaire 229",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/229.png"
       }
@@ -490,170 +418,142 @@
         "transportLogo": "assets/icons/transportMode/bus_white.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "300",
+        "lineId": "TCAR:300",
         "lineName": "Scolaire 300",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/300.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "301",
+        "lineId": "TCAR:301",
         "lineName": "Scolaire 301",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/301.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "302",
+        "lineId": "TCAR:302",
         "lineName": "Scolaire 302",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/302.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "303",
+        "lineId": "TCAR:303",
         "lineName": "Scolaire 303",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/303.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "305",
+        "lineId": "TCAR:305",
         "lineName": "Scolaire 305",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/305.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "310",
+        "lineId": "TCAR:310",
         "lineName": "Scolaire 310",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/310.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "311",
+        "lineId": "TCAR:311",
         "lineName": "Scolaire 311",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/311.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "313",
+        "lineId": "TCAR:313",
         "lineName": "Scolaire 313",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/313.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "314",
+        "lineId": "TCAR:314",
         "lineName": "Scolaire 314",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/314.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "315",
+        "lineId": "TCAR:315",
         "lineName": "Scolaire 315",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/315.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "322",
+        "lineId": "TCAR:322",
         "lineName": "Scolaire 322",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/322.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "330",
+        "lineId": "TCAR:330",
         "lineName": "Scolaire 330",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/330.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "331",
+        "lineId": "TCAR:331",
         "lineName": "Scolaire 331",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/331.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "332",
+        "lineId": "TCAR:332",
         "lineName": "Scolaire 332",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/332.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "333",
+        "lineId": "TCAR:333",
         "lineName": "Scolaire 333",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/333.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "334",
+        "lineId": "TCAR:334",
         "lineName": "Scolaire 334",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/334.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "335",
+        "lineId": "TCAR:335",
         "lineName": "Scolaire 335",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/335.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "336",
+        "lineId": "TCAR:336",
         "lineName": "Scolaire 336",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/336.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "340",
+        "lineId": "TCAR:340",
         "lineName": "Scolaire 340",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/340.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "341",
+        "lineId": "TCAR:341",
         "lineName": "Scolaire 341",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/341.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "342",
+        "lineId": "TCAR:342",
         "lineName": "Scolaire 342",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/342.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "343",
+        "lineId": "TCAR:343",
         "lineName": "Scolaire 343",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/343.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "350",
+        "lineId": "TCAR:350",
         "lineName": "Scolaire 350",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/350.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "351",
+        "lineId": "TCAR:351",
         "lineName": "Scolaire 351",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/351.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "360",
+        "lineId": "TCAR:360",
         "lineName": "Scolaire 360",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/360.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "361",
+        "lineId": "TCAR:361",
         "lineName": "Scolaire 361",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/361.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "363",
+        "lineId": "TCAR:363",
         "lineName": "Scolaire 363",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/363.png"
       },
       {
-        "companyId": "fr-astuce",
-        "lineId": "364",
+        "lineId": "TCAR:364",
         "lineName": "Scolaire 364",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/364.png"
       }
