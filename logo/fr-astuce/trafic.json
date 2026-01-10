@@ -273,6 +273,46 @@
         "transportLogo": "assets/icons/transportMode/bus_white.png"
       },
       {
+        "lineId": "TCAR:60",
+        "lineName": "Transport à la Demande Astucepro",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/Astucepro.png"
+      },
+      {
+        "lineId": "TCAR:45",
+        "lineName": "Filo'r Flexo Zone 2",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/filor.png"
+      },
+      {
+        "lineId": "TCAR:46",
+        "lineName": "Filo'r Flexo Zone 2",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/filor.png"
+      },
+      {
+        "lineId": "TCAR:47",
+        "lineName": "Filo'r Flexo Zone 3",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/filor.png"
+      },
+      {
+        "lineId": "TCAR:48",
+        "lineName": "Filo'r Flexo Zone 3",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/filor.png"
+      },
+      {
+        "lineId": "TCAR:49",
+        "lineName": "Filo'r Flexo Zone 4",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/filor.png"
+      },
+      {
+        "lineId": "TCAR:50",
+        "lineName": "Filo'r Flexo Zone 5",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/filor.png"
+      }
+    ],
+    [
+      {
+        "transportLogo": "assets/icons/transportMode/bus_white.png"
+      },
+      {
         "lineId": "TAE:101",
         "lineName": "Scolaire 101",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/101.png"

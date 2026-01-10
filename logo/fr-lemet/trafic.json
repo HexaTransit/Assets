@@ -1,0 +1,422 @@
+{
+  "companyId": "fr-lemet",
+  "companyLogo": "https://hexatransit.fr/assets/logo/fr-lemet/lemet.png",
+  "gtfsRTUrl": "https://proxy.transport.data.gouv.fr/resource/lemet-metz-gtfs-rt-service-alert?token=fPqZ-hbjxPj2wApB8E3nEEqdHZi78ZBUkp37IpoaDOM",
+  "lines": [
+    [
+      {
+        "transportLogo": "assets/icons/transportMode/bus_white.png"
+      },
+      {
+        "lineId": "A",
+        "lineName": "Mettis A",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/MA.png"
+      },
+      {
+        "lineId": "B",
+        "lineName": "Mettis B",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/MB.png"
+      }
+    ],
+    [
+      {
+        "transportLogo": "assets/icons/transportMode/bus_white.png"
+      },
+      {
+        "lineId": "1",
+        "lineName": "Liane 1",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/L1.png"
+      },
+      {
+        "lineId": "2",
+        "lineName": "Liane 2",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/L2.png"
+      },
+      {
+        "lineId": "3",
+        "lineName": "Liane 3",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/L3.png"
+      },
+      {
+        "lineId": "4",
+        "lineName": "Liane 4",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/L4.png"
+      },
+      {
+        "lineId": "5",
+        "lineName": "Liane 5",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/L5.png"
+      },
+      {
+        "lineId": "6",
+        "lineName": "Liane 6",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/L6.png"
+      }
+    ],
+    [
+      {
+        "transportLogo": "assets/icons/transportMode/bus_white.png"
+      },
+      {
+        "lineId": "12",
+        "lineName": "Citeis 12",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/C12.png"
+      },
+      {
+        "lineId": "13",
+        "lineName": "Citeis 13",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/C13.png"
+      },
+      {
+        "lineId": "14",
+        "lineName": "Citeis 14",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/C14.png"
+      },
+      {
+        "lineId": "15",
+        "lineName": "Citeis 15",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/C15.png"
+      },
+      {
+        "lineId": "16",
+        "lineName": "Citeis 16",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/C16.png"
+      },
+      {
+        "lineId": "17",
+        "lineName": "Citeis 17",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/C17.png"
+      }
+    ],
+    [
+      {
+        "transportLogo": "assets/icons/transportMode/bus_white.png"
+      },
+      {
+        "lineId": "F1",
+        "lineName": "Flexo 1",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/F1.png"
+      },
+      {
+        "lineId": "F2",
+        "lineName": "Flexo 2",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/F2.png"
+      },
+      {
+        "lineId": "F3",
+        "lineName": "Flexo 3",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/F3.png"
+      },
+      {
+        "lineId": "F4",
+        "lineName": "Flexo 4",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/F4.png"
+      },
+      {
+        "lineId": "F5",
+        "lineName": "Flexo 5",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/F5.png"
+      }
+    ],
+    [
+      {
+        "transportLogo": "assets/icons/transportMode/bus_white.png"
+      },
+      {
+        "lineId": "18",
+        "lineName": "Navette 18",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/N18.png"
+      },
+      {
+        "lineId": "19",
+        "lineName": "Navette 19",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/N19.png"
+      },
+      {
+        "lineId": "70",
+        "lineName": "Navette 70",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/N70.png"
+      },
+      {
+        "lineId": "71",
+        "lineName": "Navette 71",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/N71.png"
+      },
+      {
+        "lineId": "81",
+        "lineName": "Navette 81 City",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/N81.png"
+      },
+      {
+        "lineId": "82",
+        "lineName": "Navette 82",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/N82.png"
+      },
+      {
+        "lineId": "83",
+        "lineName": "Navette 83 City",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/N83.png"
+      },
+      {
+        "lineId": "84a",
+        "lineName": "Navette 84a",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/N84a.png"
+      },
+      {
+        "lineId": "84b",
+        "lineName": "Navette 84b",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/N84b.png"
+      },
+      {
+        "lineId": "85",
+        "lineName": "Navette 85",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/N85.png"
+      },
+      {
+        "lineId": "86",
+        "lineName": "Navette 86",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/N86.png"
+      },
+      {
+        "lineId": "87",
+        "lineName": "Navette 87",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/N87.png"
+      },
+      {
+        "lineId": "88",
+        "lineName": "Navette 88",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/N88.png"
+      },
+      {
+        "lineId": "89",
+        "lineName": "Navette 89",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/N89.png"
+      },
+      {
+        "lineId": "90",
+        "lineName": "Navette 90",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/N90.png"
+      },
+      {
+        "lineId": "92",
+        "lineName": "Navette 92",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/N92.png"
+      },
+      {
+        "lineId": "93",
+        "lineName": "Navette 93",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/N93.png"
+      }
+    ],
+    [
+      {
+        "transportLogo": "assets/icons/transportMode/bus_white.png"
+      },
+      {
+        "lineId": "101",
+        "lineName": "Proxis 101",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/P101.png"
+      },
+      {
+        "lineId": "102",
+        "lineName": "Proxis 102",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/P102.png"
+      },
+      {
+        "lineId": "103",
+        "lineName": "Proxis 103",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/P103.png"
+      },
+      {
+        "lineId": "105",
+        "lineName": "Proxis 105",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/P105.png"
+      },
+      {
+        "lineId": "106",
+        "lineName": "Proxis 106",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/P106.png"
+      },
+      {
+        "lineId": "107",
+        "lineName": "Proxis 107",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/P107.png"
+      },
+      {
+        "lineId": "108",
+        "lineName": "Proxis 108",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/P108.png"
+      },
+      {
+        "lineId": "110",
+        "lineName": "Proxis 110",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/P110.png"
+      },
+      {
+        "lineId": "111",
+        "lineName": "Proxis 111",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/P111.png"
+      },
+      {
+        "lineId": "112",
+        "lineName": "Proxis 112",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/P112.png"
+      },
+      {
+        "lineId": "113",
+        "lineName": "Proxis 113",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/P113.png"
+      }
+    ],
+    [
+      {
+        "transportLogo": "assets/icons/transportMode/bus_white.png"
+      },
+      {
+        "lineId": "200",
+        "lineName": "Scolaire 200",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/S200.png"
+      },
+      {
+        "lineId": "201",
+        "lineName": "Scolaire 201",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/S201.png"
+      },
+      {
+        "lineId": "202",
+        "lineName": "Scolaire 202",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/S202.png"
+      },
+      {
+        "lineId": "203",
+        "lineName": "Scolaire 203",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/S203.png"
+      },
+      {
+        "lineId": "204",
+        "lineName": "Scolaire 204",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/S204.png"
+      },
+      {
+        "lineId": "205",
+        "lineName": "Scolaire 205",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/S205.png"
+      },
+      {
+        "lineId": "206",
+        "lineName": "Scolaire 206",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/S206.png"
+      },
+      {
+        "lineId": "207",
+        "lineName": "Scolaire 207",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/S207.png"
+      },
+      {
+        "lineId": "208",
+        "lineName": "Scolaire 208",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/S208.png"
+      },
+      {
+        "lineId": "212",
+        "lineName": "Scolaire 212",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/S212.png"
+      },
+      {
+        "lineId": "213",
+        "lineName": "Scolaire 213",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/S213.png"
+      },
+      {
+        "lineId": "272",
+        "lineName": "Scolaire 272",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/S272.png"
+      },
+      {
+        "lineId": "273",
+        "lineName": "Scolaire 273",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/S273.png"
+      },
+      {
+        "lineId": "278",
+        "lineName": "Scolaire 278",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/S278.png"
+      },
+      {
+        "lineId": "281",
+        "lineName": "Scolaire 281",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/S281.png"
+      },
+      {
+        "lineId": "282",
+        "lineName": "Scolaire 282",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/S282.png"
+      },
+      {
+        "lineId": "283",
+        "lineName": "Scolaire 283",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/S283.png"
+      },
+      {
+        "lineId": "284",
+        "lineName": "Scolaire 284",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/S284.png"
+      },
+      {
+        "lineId": "285",
+        "lineName": "Scolaire 285",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/S285.png"
+      },
+      {
+        "lineId": "286",
+        "lineName": "Scolaire 286",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/S286.png"
+      },
+      {
+        "lineId": "287",
+        "lineName": "Scolaire 287",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/S287.png"
+      },
+      {
+        "lineId": "288",
+        "lineName": "Scolaire 288",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/S288.png"
+      },
+      {
+        "lineId": "289",
+        "lineName": "Scolaire 289",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/S289.png"
+      },
+      {
+        "lineId": "290",
+        "lineName": "Scolaire 290",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/S290.png"
+      },
+      {
+        "lineId": "291",
+        "lineName": "Scolaire 291",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/S291.png"
+      },
+      {
+        "lineId": "292",
+        "lineName": "Scolaire 292",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/S292.png"
+      },
+      {
+        "lineId": "296",
+        "lineName": "Scolaire 296",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/S296.png"
+      },
+      {
+        "lineId": "297",
+        "lineName": "Scolaire 297",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/S297.png"
+      },
+      {
+        "lineId": "299",
+        "lineName": "Scolaire 299",
+        "lineLogo": "https://hexatransit.fr/assets/logo/fr-lemet/bus/S299.png"
+      }
+    ]
+  ]
+}
