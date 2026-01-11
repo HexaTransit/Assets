@@ -1,0 +1,5 @@
+agency_id;line_id;lineName;logoPath;type;isPriority;darkMode
+fr-hobus;ATOUMOD021:Line:A:LOC;A;https://hexatransit.fr/assets/logo/fr-hobus/bus/A.png;BUS;0;0
+fr-hobus;ATOUMOD021:Line:B:LOC;B;https://hexatransit.fr/assets/logo/fr-hobus/bus/B.png;BUS;0;0
+fr-hobus;ATOUMOD021:Line:C:LOC;C;https://hexatransit.fr/assets/logo/fr-hobus/bus/C.png;BUS;0;0
+fr-hobus;ATOUMOD021:Line:N:LOC;N;https://hexatransit.fr/assets/logo/fr-hobus/bus/N.png;BUS;0;0
