@@ -1,0 +1,4 @@
+agency_id;line_id;lineName;logoPath;type;isPriority;darkMode
+fr-vikibus;ATOUMOD012:Line:1:LOC;1;https://hexatransit.fr/assets/logo/fr-vikibus/bus/1.png;BUS;1;0
+fr-vikibus;ATOUMOD012:Line:2:LOC;2;https://hexatransit.fr/assets/logo/fr-vikibus/bus/2.png;BUS;1;0
+fr-vikibus;ATOUMOD012:Line:3:LOC;3;https://hexatransit.fr/assets/logo/fr-vikibus/bus/3.png;BUS;1;0
