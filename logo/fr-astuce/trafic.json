@@ -98,7 +98,7 @@
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/F8.png"
       },
       {
-        "lineId": "TAE:118",
+        "lineId": "TAE:F9",
         "lineName": "FAST 9",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/F9.png"
       }
@@ -228,42 +228,42 @@
         "transportLogo": "assets/icons/transportMode/bus_white.png"
       },
       {
-        "lineId": "TAE:111",
+        "lineId": "TAE:A",
         "lineName": "Bus A",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/A.png"
       },
       {
-        "lineId": "TAE:112",
+        "lineId": "TAE:B",
         "lineName": "Bus B",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/B.png"
       },
       {
-        "lineId": "TAE:113",
+        "lineId": "TAE:C",
         "lineName": "Bus C",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/C.png"
       },
       {
-        "lineId": "TAE:116",
+        "lineId": "TAE:D1",
         "lineName": "Bus D1",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/D1.png"
       },
       {
-        "lineId": "TAE:117",
+        "lineId": "TAE:D2",
         "lineName": "Bus D2",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/D2.png"
       },
       {
-        "lineId": "TAE:115",
+        "lineId": "TAE:F",
         "lineName": "Bus F",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/F.png"
       },
       {
-        "lineId": "TAE:119",
+        "lineId": "TAE:G",
         "lineName": "Bus G",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/G.png"
       },
       {
-        "lineId": "TAE:120",
+        "lineId": "TAE:I",
         "lineName": "Bus I",
         "lineLogo": "https://hexatransit.fr/assets/logo/fr-astuce/bus/I.png"
       }
