@@ -5,9 +5,29 @@ import io
 import os
 import argparse
 import urllib.request
+import urllib.error
 import zipfile
 import csv
 from collections import defaultdict
+
+
+def download_gtfs_zip(url, timeout=30):
+    """Download GTFS zip bytes using explicit headers.
+    Some hosts block default Python urllib user agents in CI environments.
+    """
+    headers = {
+        'User-Agent': (
+            'Mozilla/5.0 (X11; Linux x86_64) '
+            'AppleWebKit/537.36 (KHTML, like Gecko) '
+            'Chrome/124.0.0.0 Safari/537.36'
+        ),
+        'Accept': 'application/zip,application/octet-stream,*/*;q=0.8',
+        'Accept-Language': 'en-US,en;q=0.9',
+        'Referer': 'https://hexatransit.fr/',
+    }
+    req = urllib.request.Request(url, headers=headers, method='GET')
+    with urllib.request.urlopen(req, timeout=timeout) as resp:
+        return resp.read()
 
 
 def gather_trafic_json(root_dir):
@@ -95,8 +115,18 @@ def check_gtfs_for_agencies(agencies, timeout=30):
         url = f'https://hexatransit.fr/datasets/gtfs/{aid}.zip'
         print(f'[{idx}/{total}] Checking GTFS for agency "{aid}" -> {url}')
         try:
-            resp = urllib.request.urlopen(url, timeout=timeout)
-            dataz = resp.read()
+            dataz = download_gtfs_zip(url, timeout=timeout)
+        except urllib.error.HTTPError as e:
+            if e.code == 403:
+                msg = (
+                    f'Failed to download {url}: HTTP 403 Forbidden '
+                    f'(server likely blocks CI/IP or Python clients)'
+                )
+            else:
+                msg = f'Failed to download {url}: HTTP {e.code} {e.reason}'
+            print('ERROR -', msg)
+            errors.append(msg)
+            continue
         except Exception as e:
             msg = f'Failed to download {url}: {e}'
             print('ERROR -', msg)
