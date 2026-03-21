@@ -40,10 +40,10 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Check GTFS routes match trafic.json
-        run: python .github/scripts/check_gtfs_route_trafic.py
+        run: python .github/scripts/check_gtfs_route_trafic.py --cache-bust
 
       - name: Check GTFS routes match lines_picto
-        run: python .github/scripts/check_gtfs_route_lines_picto.py
+        run: python .github/scripts/check_gtfs_route_lines_picto.py --cache-bust
 
   deploy:
     if: github.ref == 'refs/heads/main'

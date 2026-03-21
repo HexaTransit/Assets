@@ -11,10 +11,18 @@ import csv
 from collections import defaultdict
 
 
-def download_gtfs_zip(url, timeout=30):
+def with_cache_bust(url, cache_bust_token=None):
+    if not cache_bust_token:
+        return url
+    sep = '&' if '?' in url else '?'
+    return f'{url}{sep}cb={cache_bust_token}'
+
+
+def download_gtfs_zip(url, timeout=30, cache_bust_token=None):
     """Download GTFS zip bytes using explicit headers.
     Some hosts block default Python urllib user agents in CI environments.
     """
+    final_url = with_cache_bust(url, cache_bust_token=cache_bust_token)
     headers = {
         'User-Agent': (
             'Mozilla/5.0 (X11; Linux x86_64) '
@@ -24,8 +32,10 @@ def download_gtfs_zip(url, timeout=30):
         'Accept': 'application/zip,application/octet-stream,*/*;q=0.8',
         'Accept-Language': 'en-US,en;q=0.9',
         'Referer': 'https://hexatransit.fr/',
+        'Cache-Control': 'no-cache',
+        'Pragma': 'no-cache',
     }
-    req = urllib.request.Request(url, headers=headers, method='GET')
+    req = urllib.request.Request(final_url, headers=headers, method='GET')
     with urllib.request.urlopen(req, timeout=timeout) as resp:
         return resp.read()
 
@@ -103,7 +113,7 @@ def gather_trafic_json(root_dir):
     return agencies, files_read
 
 
-def check_gtfs_for_agencies(agencies, timeout=30):
+def check_gtfs_for_agencies(agencies, timeout=30, cache_bust_token=None):
     errors = []
     total = len(agencies)
     idx = 0
@@ -113,9 +123,12 @@ def check_gtfs_for_agencies(agencies, timeout=30):
             print(f'[{idx}/{total}] Agency "{aid}": no lineIds to check, skipping')
             continue
         url = f'https://hexatransit.fr/datasets/gtfs/{aid}.zip'
-        print(f'[{idx}/{total}] Checking GTFS for agency "{aid}" -> {url}')
+        if cache_bust_token:
+            print(f'[{idx}/{total}] Checking GTFS for agency "{aid}" -> {url} (cache-bust enabled)')
+        else:
+            print(f'[{idx}/{total}] Checking GTFS for agency "{aid}" -> {url}')
         try:
-            dataz = download_gtfs_zip(url, timeout=timeout)
+            dataz = download_gtfs_zip(url, timeout=timeout, cache_bust_token=cache_bust_token)
         except urllib.error.HTTPError as e:
             if e.code == 403:
                 msg = (
@@ -192,6 +205,7 @@ def main():
     parser = argparse.ArgumentParser(description='Check GTFS routes for line IDs listed in trafic.json files under a logo directory.')
     parser.add_argument('--logo-dir', default='logo', help='Path to the logo directory to search (default: logo)')
     parser.add_argument('--timeout', type=int, default=30, help='Network timeout seconds when downloading GTFS (default: 30)')
+    parser.add_argument('--cache-bust', action='store_true', help='Append cache-busting query parameter and no-cache headers to GTFS downloads')
     args = parser.parse_args()
 
     if not os.path.isdir(args.logo_dir):
@@ -207,7 +221,17 @@ def main():
     for p in files_read:
         print(' -', p)
 
-    errors = check_gtfs_for_agencies(agencies, timeout=args.timeout)
+    cache_bust_token = None
+    if args.cache_bust:
+        run_id = os.getenv('GITHUB_RUN_ID', '').strip()
+        run_attempt = os.getenv('GITHUB_RUN_ATTEMPT', '').strip()
+        sha = os.getenv('GITHUB_SHA', '').strip()
+        if run_id:
+            cache_bust_token = f'{run_id}-{run_attempt or "1"}-{sha[:7] if sha else "local"}'
+        else:
+            cache_bust_token = 'local-run'
+
+    errors = check_gtfs_for_agencies(agencies, timeout=args.timeout, cache_bust_token=cache_bust_token)
 
     if errors:
         print('\nGTFS verification errors:')

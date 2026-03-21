@@ -40,28 +40,38 @@ foreach ($it as $file) {
     $handle = fopen($path, 'r');
     if (!$handle) continue;
 
-    $lineNum = 0;
-    while (($line = fgets($handle)) !== false) {
-        $lineNum++;
-        // Enlever BOM UTF-8 si présent sur la première ligne du fichier
-        if ($lineNum === 1) {
-            $line = preg_replace('/^\xEF\xBB\xBF/', '', $line);
+    $header = fgetcsv($handle, 0, ';');
+    if ($header === false) {
+        fclose($handle);
+        continue;
+    }
+
+    // Enlever BOM UTF-8 si présent sur la première cellule de l'en-tête
+    if (isset($header[0])) {
+        $header[0] = preg_replace('/^\xEF\xBB\xBF/', '', $header[0]);
+    }
+
+    if (!$firstHeaderPrinted) {
+        fputcsv($out, $header, ';');
+        $firstHeaderPrinted = true;
+    }
+
+    // Compatibilité avec des en-têtes `line_id` ou `lineId`
+    $agencyIdIndex = array_search('agency_id', $header, true);
+    $lineIdIndex = array_search('line_id', $header, true);
+    if ($lineIdIndex === false) {
+        $lineIdIndex = array_search('lineId', $header, true);
+    }
+
+    while (($row = fgetcsv($handle, 0, ';')) !== false) {
+        if ($agencyIdIndex !== false && $lineIdIndex !== false && isset($row[$agencyIdIndex], $row[$lineIdIndex])) {
+            $prefix = $row[$agencyIdIndex] . '_';
+            if (strpos($row[$lineIdIndex], $prefix) !== 0) {
+                $row[$lineIdIndex] = $prefix . $row[$lineIdIndex];
+            }
         }
 
-        // Imprimer l'en-tête une seule fois (la première en-tête rencontrée)
-        if ($lineNum === 1 && !$firstHeaderPrinted) {
-            fwrite($out, rtrim($line, "\r\n") . PHP_EOL);
-            $firstHeaderPrinted = true;
-            continue;
-        }
-
-        // Saute la première ligne (header) des fichiers suivants
-        if ($lineNum === 1 && $firstHeaderPrinted) {
-            continue;
-        }
-
-        // Écrire la ligne telle quelle (préserve le délimiteur `;`)
-        fwrite($out, rtrim($line, "\r\n") . PHP_EOL);
+        fputcsv($out, $row, ';');
     }
 
     fclose($handle);

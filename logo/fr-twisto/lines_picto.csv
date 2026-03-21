@@ -1,4 +1,4 @@
-agency_id;route_id;line_name;logoPath;type;isPriority;isNight
+agency_id;line_id;line_name;logoPath;type;isPriority;isNight
 "fr-twisto";"T1";"T1";"https://hexatransit.fr/assets/logo/fr-twisto/tram/T1.png";"tram";"0";"0"
 "fr-twisto";"T2";"T2";"https://hexatransit.fr/assets/logo/fr-twisto/tram/T2.png";"tram";"0";"0"
 "fr-twisto";"T3";"T3";"https://hexatransit.fr/assets/logo/fr-twisto/tram/T3.png";"tram";"0";"0"
