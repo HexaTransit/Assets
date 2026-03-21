@@ -1,0 +1,12 @@
+agency_id;route_id;line_name;logoPath;type;isPriority;isNight
+"fr-sngo";"ATOUMOD007:Line:10:LOC";"10";"https://hexatransit.fr/assets/logo/fr-sngo/bus/10.png";"bus";"0";"0"
+"fr-sngo";"ATOUMOD007:Line:21:LOC";"1";"https://hexatransit.fr/assets/logo/fr-sngo/bus/1.png";"bus";"0";"0"
+"fr-sngo";"ATOUMOD007:Line:22:LOC";"2";"https://hexatransit.fr/assets/logo/fr-sngo/bus/2.png";"bus";"0";"0"
+"fr-sngo";"ATOUMOD007:Line:23:LOC";"3";"https://hexatransit.fr/assets/logo/fr-sngo/bus/3.png";"bus";"0";"0"
+"fr-sngo";"ATOUMOD007:Line:24:LOC";"4";"https://hexatransit.fr/assets/logo/fr-sngo/bus/4.png";"bus";"0";"0"
+"fr-sngo";"ATOUMOD007:Line:25:LOC";"5";"https://hexatransit.fr/assets/logo/fr-sngo/bus/5.png";"bus";"0";"0"
+"fr-sngo";"ATOUMOD007:Line:26:LOC";"6";"https://hexatransit.fr/assets/logo/fr-sngo/bus/6.png";"bus";"0";"0"
+"fr-sngo";"ATOUMOD007:Line:29:LOC";"9";"https://hexatransit.fr/assets/logo/fr-sngo/bus/9.png";"bus";"0";"0"
+"fr-sngo";"ATOUMOD007:Line:31:LOC";"11";"https://hexatransit.fr/assets/logo/fr-sngo/bus/11.png";"bus";"0";"0"
+"fr-sngo";"ATOUMOD007:Line:38:LOC";"8A";"https://hexatransit.fr/assets/logo/fr-sngo/bus/8A.png";"bus";"0";"0"
+"fr-sngo";"ATOUMOD007:Line:48:LOC";"8B";"https://hexatransit.fr/assets/logo/fr-sngo/bus/8B.png";"bus";"0";"0"
