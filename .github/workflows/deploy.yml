@@ -39,11 +39,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
 
-      - name: Check GTFS routes match trafic.json
-        run: python .github/scripts/check_gtfs_route_trafic.py --cache-bust
-
-      - name: Check lines_picto against Transitous feeds
-        run: python .github/scripts/check_transitous_lines_picto.py --suggest
+      - name: Check lines_picto.csv and trafic.json against Transitous feeds
+        run: python .github/scripts/check_transitous_routes.py --suggest
 
   deploy:
     if: github.ref == 'refs/heads/main'

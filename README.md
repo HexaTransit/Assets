@@ -24,12 +24,12 @@ feeds in `transitous.json`:
 A feed id is `fr-` followed by the source `name` in
 [transitous/feeds/fr.json](https://github.com/public-transport/transitous/blob/main/feeds/fr.json).
 `lines_picto.php` then publishes each `line_id` once per feed, as
-`<feed>_<line_id>`. The `line_id` in `lines_picto.csv` must be the `route_id`
-of the feed's GTFS. To check (and fix unambiguous mismatches):
+`<feed>_<line_id>`. The `line_id` in `lines_picto.csv` and the `lineId` in
+`trafic.json` must be `route_id`s of the feed's GTFS. To check (and fix unambiguous mismatches):
 
 ```
-python .github/scripts/check_transitous_lines_picto.py --network fr-star --suggest
-python .github/scripts/check_transitous_lines_picto.py --network fr-star --fix
+python .github/scripts/check_transitous_routes.py --network fr-star --suggest
+python .github/scripts/check_transitous_routes.py --network fr-star --fix
 ```
 
 ### How to Contribute via Pull Request
