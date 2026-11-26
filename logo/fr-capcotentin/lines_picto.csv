@@ -13,7 +13,7 @@ fr-capcotentin;A1;A1;https://hexatransit.fr/assets/logo/fr-capcotentin/bus/A1.pn
 fr-capcotentin;A2;A2;https://hexatransit.fr/assets/logo/fr-capcotentin/bus/A2.png;BUS;0;0
 fr-capcotentin;B;B;https://hexatransit.fr/assets/logo/fr-capcotentin/bus/B.png;BUS;0;0
 fr-capcotentin;C;C;https://hexatransit.fr/assets/logo/fr-capcotentin/bus/C.png;BUS;0;0
-fr-capcotentin;C<>R;C<>R;https://hexatransit.fr/assets/logo/fr-capcotentin/bus/C-R.png;BUS;0;0
+fr-capcotentin;ATOUMOD035:Line:CxxR:LOC;C<>R;https://hexatransit.fr/assets/logo/fr-capcotentin/bus/C-R.png;BUS;0;0
 fr-capcotentin;D;D;https://hexatransit.fr/assets/logo/fr-capcotentin/bus/D.png;BUS;0;0
 fr-capcotentin;E;E;https://hexatransit.fr/assets/logo/fr-capcotentin/bus/E.png;BUS;0;0
 fr-capcotentin;F;F;https://hexatransit.fr/assets/logo/fr-capcotentin/bus/F.png;BUS;0;0

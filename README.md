@@ -9,6 +9,28 @@ This repository contains graphic assets and data for HexaTransit.
 - `lines_picto.csv`: CSV file listing line pictograms.
 - `trafic.json`: Traffic data.
 - `logo/`: Folders containing logos by network and mode (e.g., `fr-idf/metro/`, `fr-star/bus/`, etc.).
+- `logo/<network>/transitous.json`: Transitous feeds publishing this network's lines.
+
+### Transitous feeds
+
+The app gets its data from [Transitous](https://transitous.org), where every
+line is identified as `<feed>_<route_id>`. Each network folder declares its
+feeds in `transitous.json`:
+
+```json
+{ "feeds": ["fr-reseau-urbain-STAR"] }
+```
+
+A feed id is `fr-` followed by the source `name` in
+[transitous/feeds/fr.json](https://github.com/public-transport/transitous/blob/main/feeds/fr.json).
+`lines_picto.php` then publishes each `line_id` once per feed, as
+`<feed>_<line_id>`. The `line_id` in `lines_picto.csv` must be the `route_id`
+of the feed's GTFS. To check (and fix unambiguous mismatches):
+
+```
+python .github/scripts/check_transitous_lines_picto.py --network fr-star --suggest
+python .github/scripts/check_transitous_lines_picto.py --network fr-star --fix
+```
 
 ### How to Contribute via Pull Request
 

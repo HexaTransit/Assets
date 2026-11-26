@@ -63,8 +63,35 @@ foreach ($it as $file) {
         $lineIdIndex = array_search('lineId', $header, true);
     }
 
+    // Flux Transitous du réseau (logo/<réseau>/transitous.json) : côté app,
+    // les lignes sont identifiées par "<flux>_<route_id GTFS>".
+    $feeds = [];
+    $feedsFile = dirname($path) . DIRECTORY_SEPARATOR . 'transitous.json';
+    if (is_file($feedsFile)) {
+        $config = json_decode(file_get_contents($feedsFile), true);
+        if (is_array($config) && isset($config['feeds']) && is_array($config['feeds'])) {
+            $feeds = array_values(array_filter($config['feeds'], 'is_string'));
+        }
+    }
+
     while (($row = fgetcsv($handle, 0, ';')) !== false) {
-        if ($agencyIdIndex !== false && $lineIdIndex !== false && isset($row[$agencyIdIndex], $row[$lineIdIndex])) {
+        if ($lineIdIndex === false || !isset($row[$lineIdIndex])) {
+            fputcsv($out, $row, ';');
+            continue;
+        }
+
+        if (!empty($feeds)) {
+            // Une ligne par flux : un réseau peut être publié dans plusieurs flux
+            foreach ($feeds as $feed) {
+                $feedRow = $row;
+                $feedRow[$lineIdIndex] = $feed . '_' . $row[$lineIdIndex];
+                fputcsv($out, $feedRow, ';');
+            }
+            continue;
+        }
+
+        // Ancien format : "<agency_id>_<line_id>"
+        if ($agencyIdIndex !== false && isset($row[$agencyIdIndex])) {
             $prefix = $row[$agencyIdIndex] . '_';
             if (strpos($row[$lineIdIndex], $prefix) !== 0) {
                 $row[$lineIdIndex] = $prefix . $row[$lineIdIndex];
